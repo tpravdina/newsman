@@ -1,0 +1,9 @@
+@import "../../scssHelpers";
+.Logo {
+  &--orange {
+    fill: $orange;
+  }
+  &--white {
+    fill: $white;
+  }
+}

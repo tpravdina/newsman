@@ -1,0 +1,5 @@
+@mixin background($path-to-img) {
+  background: url($path-to-img) no-repeat;
+  background-size: cover;
+  background-position: center;
+}

@@ -1,0 +1,14 @@
+.Video {
+  display: grid;
+  place-items: center;
+  &__main-video {
+    width: 100%;
+    grid-row: 1;
+    grid-column: 1;
+  }
+  &__button {
+    grid-row: 1;
+    grid-column: 1;
+    width: 10vw;
+  }
+}

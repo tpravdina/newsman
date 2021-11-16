@@ -1,0 +1,44 @@
+@import "../../../scssHelpers";
+.ContactForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  &__input {
+    padding: 1em;
+    height: 100%;
+    width: 100%;
+    background-color: $black;
+    color: $white;
+
+    font-size: toEM(20);
+
+    border: 1px solid $white;
+    outline: none;
+
+    &:focus {
+      background-color: $black;
+      color: $white;
+    }
+    &::placeholder {
+      color: $placeholder-color;
+      font-weight: 300;
+    }
+    &--error {
+      border: 1px solid red;
+    }
+    &--correct {
+      border: 1px solid green;
+    }
+  }
+  &__button {
+    margin-top: 0;
+    width: toEM(200);
+  }
+  &__error-message {
+    justify-self: start;
+    margin-top: 1em;
+    color: $white;
+    height: 2em;
+    font-weight: 300;
+  }
+}

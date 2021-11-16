@@ -1,0 +1,30 @@
+@import "../../scssHelpers";
+.Navbar {
+  display: flex;
+  align-items: center;
+  height: 12vh;
+  background-color: $black;
+  &__ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    list-style-type: none;
+    margin: 5vmin 0;
+    li {
+      margin: 2vmin 1vw;
+    }
+  }
+  &__link {
+    text-transform: uppercase;
+    color: $white;
+
+    cursor: pointer;
+    &:hover {
+      transition: 0.5s;
+      color: $orange;
+    }
+  }
+}

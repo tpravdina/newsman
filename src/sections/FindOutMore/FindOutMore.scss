@@ -1,0 +1,59 @@
+@import "../../scssHelpers";
+.FindOutMore {
+  margin: 20vh 0 15vh 0;
+  display: grid;
+  grid-template:
+    "title title title title title"
+    ". . . container ."
+    ". subtitle slider slider slider"
+    " . . button .  ."
+    / $wide-padding 2fr 4fr 6fr $wide-padding;
+  @include for-tablet {
+    grid-template-columns: $narrow-padding 2fr 4fr 6fr $narrow-padding;
+  }
+  @include for-mobile {
+    place-items: center;
+    grid-template:
+      ". title title ."
+      ". subtitle container ."
+      ". slider slider ."
+      " . button button ."
+      / $narrow-padding 1fr 1fr $narrow-padding;
+  }
+  @include for-tablet-and-mobile {
+    margin: 5vh 0 5vh 0;
+  }
+  &__title {
+    grid-area: title;
+  }
+  &__subtitle {
+    grid-area: subtitle;
+    font-family: "Caslim";
+    font-size: toEM(30);
+  }
+  &__slider {
+    grid-area: slider;
+    width: 100%;
+  }
+  &__slider-button-container {
+    grid-area: container;
+    margin: 5vh 0;
+    justify-self: end;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: $column-gap;
+    width: fit-content;
+  }
+  &__prev-arrow,
+  &__next-arrow {
+    height: toEM(25);
+    fill: $white;
+    &:hover {
+      transition: 0.5s;
+      fill: $orange;
+    }
+  }
+  &__see-all-button {
+    grid-area: button;
+  }
+}

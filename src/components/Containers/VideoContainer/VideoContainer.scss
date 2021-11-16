@@ -1,0 +1,10 @@
+@import "../../../scssHelpers/index.scss";
+.VideoContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @include for-mobile {
+    grid-template-columns: 1fr;
+  }
+  grid-column-gap: $column-gap;
+  grid-row-gap: 1.5 * $column-gap;
+}

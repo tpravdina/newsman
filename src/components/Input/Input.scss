@@ -1,0 +1,22 @@
+@import "../../scssHelpers";
+.Input {
+  height: $rect-button-height;
+  background-color: $white;
+  color: $black;
+
+  font-size: toEM(20);
+
+  border: none;
+  outline: none;
+
+  &::placeholder {
+    color: $placeholder-color;
+    font-weight: 300;
+  }
+
+  &--black {
+    border: 1px solid $white;
+    background-color: $black;
+    color: $white;
+  }
+}

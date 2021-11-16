@@ -1,0 +1,237 @@
+{
+    "articles": [
+        {
+          "id": "61323e6b5cf95da4d9f1f85e",
+          "img": "/img/article/img1.jpg",
+          "title": "Dolor elit",
+          "date": "02.09.2021",
+          "category": "Sport",
+          "text": "Cillum nostrud cupidatat dolor proident anim. Incididunt velit ullamco nisi nulla nulla tempor adipisicing fugiat ullamco enim elit dolore ex. Reprehenderit excepteur occaecat non enim Lorem cillum cillum ex in elit non voluptate nostrud. Eu consequat mollit.\r\n"
+        },
+        {
+          "id": "61323e6bcc21016602e61f21",
+          "img": "/img/article/img2.jpg",
+          "title": "Fugiat aute",
+          "date": "15.09.2021",
+          "category": "Sport",
+          "text": "Elit id laboris veniam duis velit. Nisi minim exercitation et ad anim non irure nisi reprehenderit ad cupidatat dolor occaecat duis. Labore cillum elit sint non esse commodo nulla culpa irure anim duis voluptate duis sint. Excepteur dolor adipisicing occaecat pariatur excepteur cillum.\r\n"
+        },
+        {
+          "id": "61323e6bca63b642ca4352d3",
+          "img": "/img/article/img3.jpg",
+          "title": "Ut cillum",
+          "date": "02.09.2021",
+          "category": "Sport",
+          "text": "Reprehenderit non reprehenderit est ex irure aliquip eu consectetur enim dolore cillum irure. Culpa incididunt id anim esse nostrud. Esse non deserunt Lorem reprehenderit in officia fugiat irure fugiat aute. Veniam occaecat elit anim laboris ipsum est ex.\r\n"
+        },
+        {
+          "id": "61323e6bac8f3ccb9c1eb1a3",
+          "img": "/img/article/img4.jpg",
+          "title": "Nostrud enim",
+          "date": "02.09.2021",
+          "category": "Sport",
+          "text": "Nisi consequat consectetur consequat Lorem. Et laboris nisi do anim voluptate elit occaecat. Anim non quis mollit aliquip quis enim quis Lorem dolore esse nisi minim amet. Nisi dolore dolore dolore aute magna id. Ea tempor officia culpa sint deserunt eu labore ex cupidatat adipisicing nisi exercitation.\r\n"
+        },
+        {
+          "id": "61323e6b129f809b3a4cfb44",
+          "img": "/img/article/img5.jpg",
+          "title": "Dolore deserunt",
+          "date": "15.09.2021",
+          "category": "Articles",
+          "text": "Ad id ex ad irure dolor. Eu incididunt id ipsum pariatur elit dolor magna nostrud. Amet do ea aute est do magna enim velit anim magna voluptate incididunt id. Aliqua velit adipisicing dolore officia ipsum qui incididunt in. Laborum aute occaecat.\r\n"
+        },
+        {
+          "id": "61323e6b7fafcdffdcadb894",
+          "img": "/img/article/img6.jpg",
+          "title": "Duis sit",
+          "date": "02.09.2021",
+          "category": "Sport",
+          "text": "Id officia fugiat dolor minim elit et exercitation aliqua ea labore aliquip est magna. Deserunt mollit ipsum consequat deserunt sunt aliquip et et consectetur exercitation. Minim adipisicing magna incididunt adipisicing sit esse anim mollit.\r\n"
+        },
+        {
+          "id": "61323e6bc1fca6da7523884b",
+          "img": "/img/article/img7.jpg",
+          "title": "Elit reprehenderit",
+          "date": "15.09.2021",
+          "category": "News",
+          "text": "Excepteur eu aute nulla occaecat anim mollit amet. Fugiat magna fugiat sint ex officia. Aute cupidatat est est eu tempor. Dolore laborum ipsum duis adipisicing quis.\r\n"
+        },
+        {
+          "id": "61323e6ba5578afd1912ba78",
+          "img": "/img/article/img8.jpg",
+          "title": "Dolore veniam",
+          "date": "15.09.2021",
+          "category": "News",
+          "text": "Eiusmod fugiat elit sunt cillum sint eu ad anim. Sunt veniam dolore sint tempor. Laborum ex duis nisi incididunt commodo proident deserunt. Ullamco proident laboris commodo eiusmod exercitation excepteur mollit velit magna.\r\n"
+        },
+        {
+          "id": "61323e6b7a826d129cfd24c6",
+          "img": "/img/article/img9.jpg",
+          "title": "Aute eu",
+          "date": "02.09.2021",
+          "category": "Sport",
+          "text": "Aute mollit velit cillum voluptate exercitation adipisicing deserunt mollit cillum tempor. Elit aute est voluptate reprehenderit dolor commodo anim culpa. Qui ex incididunt eiusmod duis occaecat officia non nisi ut cupidatat duis.\r\n"
+        }
+      ],
+    "products": [
+      {
+        "id": "01",
+        "img": "img/products/sweaters/img1.jpg",
+        "title": "Sweater 1",
+        "description": "Description Sweater 1",
+        "oldPrice": 1300,
+        "newPrice": 899,
+        "category": "sweaters"
+      },
+      {
+        "id": "02",
+        "img": "img/products/sweaters/img2.jpg",
+        "title": "Sweater 2",
+        "description": "Description Sweater 2",
+        "oldPrice": 1300,
+        "newPrice": 899,
+        "category": "sweaters"
+      },
+      {
+        "id": "03",
+        "img": "img/products/sweaters/img3.jpg",
+        "title": "Sweater 3",
+        "description": "Description Sweater 3",
+        "oldPrice": 1300,
+        "newPrice": 899,
+        "category": "sweaters"
+      },
+      {
+        "id": "04",
+        "img": "img/products/trousers/img1.jpg",
+        "title": "Trousers 1",
+        "description": "Description Trousers 1",
+        "oldPrice": 1300,
+        "newPrice": 899,
+        "category": "trousers"
+      },
+      {
+        "id": "05",
+        "img": "img/products/trousers/img2.jpg",
+        "title": "Trousers 2",
+        "description": "Description Trousers 2",
+        "oldPrice": 1300,
+        "newPrice": 899,
+        "category": "trousers"
+      },
+      {
+        "id": "06",
+        "img": "img/products/trousers/img3.jpg",
+        "title": "Trousers 3",
+        "description": "Description Trousers 3",
+        "oldPrice": 1300,
+        "newPrice": 899,
+        "category": "trousers"
+      },
+      {
+        "id": "07",
+        "img": "img/products/hats/img1.jpg",
+        "title": "Hat 1",
+        "description": "Description Hat 1",
+        "oldPrice": 1300,
+        "newPrice": 899,
+        "category": "hats"
+      },
+      {
+        "id": "08",
+        "img": "img/products/hats/img2.jpg",
+        "title": "Hat 2",
+        "description": "Description Hat 2",
+        "oldPrice": 1300,
+        "newPrice": 899,
+        "category": "hats"
+      },
+      {
+        "id": "09",
+        "img": "img/products/hats/img3.jpg",
+        "title": "Hat 3",
+        "description": "Description Hat 3",
+        "oldPrice": 1300,
+        "newPrice": 899,
+        "category": "hats"
+      },
+      {
+        "id": "10",
+        "img": "img/products/suits/img1.jpg",
+        "title": "Suit 1",
+        "description": "Description Suit1",
+        "oldPrice": 1300,
+        "newPrice": 899,
+        "category": "suits"
+      },
+      {
+        "id": "11",
+        "img": "img/products/suits/img2.jpg",
+        "title": "Suit 2",
+        "description": "Description Suit2",
+        "oldPrice": 1300,
+        "newPrice": 899,
+        "category": "suits"
+      },
+      {
+        "id": "12",
+        "img": "img/products/suits/img3.jpg",
+        "title": "Suit 3",
+        "description": "Description Suit3",
+        "oldPrice": 1300,
+        "newPrice": 899,
+        "category": "suits"
+      }
+  ],
+  "reviews": [
+    {
+      "id": "61323e6b5cf95da4d9f1f851",
+      "img": "/img/step-slider/img1.jpg",
+      "name": "Darrell Steward",
+      "role": "papperboy",
+      "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit."
+    },
+    {
+      "id": "61323e6b5cf95da4d9f1f852",
+      "img": "/img/step-slider/img2.jpg",
+      "name": "Vance Mcneil",
+      "role": "papperboy",
+      "text": "Velit quis nulla sit et cillum in fugiat enim duis laboris. Sunt laborum voluptate cupidatat cupidatat consequat enim in. Ex quis dolore officia consequat sint enim enim exercitation consectetur"
+    },
+    {
+      "id": "61323e6b5cf95da4d9f1f853",
+      "img": "/img/step-slider/img3.jpg",
+      "name": "Ray Hall",
+      "role": "papperboy",
+      "text": "Tempor id ea minim duis nulla eiusmod esse. Duis elit quis eu magna nostrud irure laborum cupidatat velit ipsum ad irure pariatur laboris. Laboris nostrud ipsum eu minim veniam incididunt duis esse magna aliqua nostrud ex. Ex laborum sint dolore esse. Esse sint veniam non non consectetur."
+    },
+    {
+      "id": "61323e6b5cf95da4d9f1f854",
+      "img": "/img/step-slider/img4.jpg",
+      "name": "Vaughn Ellis",
+      "role": "newsman",
+      "text": "Velit cillum ipsum nisi commodo cillum voluptate est consectetur fugiat nulla. Amet consequat nisi cupidatat sint velit officia qui consequat. Officia laboris in minim velit proident"
+    },
+    {
+      "id": "61323e6b5cf95da4d9f1f855",
+      "img": "/img/step-slider/img5.jpg",
+      "name": "Morse Carr",
+      "role": "newsman",
+      "text": "Adipisicing esse dolor ut et. Duis elit aute sint nisi sint veniam laboris laborum do pariatur amet. Cupidatat fugiat irure velit laborum labore proident consequat aute culpa adipisicing cupidatat proident incididunt."
+    },
+    {
+      "id": "61323e6b5cf95da4d9f1f856",
+      "img": "/img/step-slider/img6.jpg",
+      "name": "Schultz Marshall",
+      "role": "papperboy",
+      "text": "Ad consectetur et amet do anim do minim ea nulla mollit consequat ullamco. Irure aute mollit dolore ut dolor ut est sint esse non commodo. Do deserunt excepteur proident consectetur elit. Veniam labore voluptate elit officia ipsum do do ullamco nisi."
+    },
+    {
+      "id": "61323e6b5cf95da4d9f1f857",
+      "img": "/img/step-slider/img7.jpg",
+      "name": "Romero Harrell",
+      "role": "newsman",
+      "text": "Laboris qui occaecat laborum labore sit. Aute excepteur Lorem cillum anim. Incididunt duis Lorem pariatur eu reprehenderit minim quis dolore culpa quis aliquip. Duis aute mollit veniam duis dolor dolore ad enim veniam consectetur. Ex irure exercitation dolor eiusmod esse est dolore eiusmod deserunt cillum anim aliqua ipsum sit."
+    }
+  ]
+}

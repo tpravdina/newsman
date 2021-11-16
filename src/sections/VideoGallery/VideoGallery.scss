@@ -1,0 +1,9 @@
+@import "../../scssHelpers";
+.VideoGallery {
+  @include addaptive-padding();
+  display: flex;
+  flex-direction: column;
+  &__button {
+    align-self: center;
+  }
+}

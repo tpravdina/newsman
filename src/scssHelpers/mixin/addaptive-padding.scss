@@ -1,0 +1,20 @@
+@mixin addaptive-padding($side: "") {
+  @if ($side == "left") {
+    padding: 0 0 0 $wide-padding;
+    @include for-tablet-and-mobile {
+      padding: 0 0 0 $narrow-padding;
+    }
+  }
+  @if ($side == "right") {
+    padding: 0 $wide-padding 0 0;
+    @include for-tablet-and-mobile {
+      padding: 0 $narrow-padding 0 0;
+    }
+  }
+  @if ($side == "") {
+    padding: 0 $wide-padding;
+    @include for-tablet-and-mobile {
+      padding: 0 $narrow-padding;
+    }
+  }
+}

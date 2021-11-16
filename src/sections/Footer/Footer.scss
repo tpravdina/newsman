@@ -1,0 +1,81 @@
+@import '../../scssHelpers';
+.Footer {
+  padding: 5vmin $narrow-padding;
+  background-color: $broun;
+  min-height: 40vh;
+
+  display: grid;
+  grid-template:
+    'logo . help shop company'
+    'buttom-text buttom-text buttom-text buttom-text buttom-text'
+    / auto 1fr 1fr 1fr 1fr;
+  grid-row-gap: 10vh;
+
+  @include for-mobile {
+    grid-template:
+      'logo shop'
+      'help company'
+      'buttom-text buttom-text'
+      / 1.5fr 1fr;
+    grid-column-gap: $column-gap;
+    grid-row-gap: 10vh;
+  }
+  &__logo {
+    grid-area: logo;
+    width: 15vw;
+    @include for-mobile {
+      width: 80%;
+    }
+  }
+  &__help,
+  &__shop,
+  &__company {
+    justify-self: end;
+    @include for-mobile {
+      justify-self: start;
+    }
+  }
+  &__help {
+    grid-area: help;
+  }
+  &__shop {
+    grid-area: shop;
+  }
+  &__company {
+    grid-area: company;
+  }
+  &__title {
+    font-family: 'Caslim';
+    font-size: toEM(30);
+  }
+  &__ul {
+    margin-top: toEM(18);
+    list-style: none;
+    padding: 0;
+  }
+  &__li-item {
+    font-size: toEM(18);
+    font-weight: 300;
+    line-height: toEM(28);
+    cursor: pointer;
+    &:hover {
+      transition: 0.5s;
+      color: $orange;
+    }
+    & a {
+      text-decoration: none;
+      &:hover {
+        transition: 0.5s;
+        color: $orange;
+      }
+    }
+  }
+  &__buttom-text {
+    grid-area: buttom-text;
+    font-size: toEM(18);
+    line-height: toEM(28);
+    font-weight: 300;
+    justify-self: center;
+    text-align: center;
+  }
+}

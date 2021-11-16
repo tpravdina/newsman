@@ -1,0 +1,30 @@
+@import "../../scssHelpers";
+.SubscribeToUs {
+  @include addaptive-padding();
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: url("../../backgroundImages/subscribe-to-us.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__title {
+    margin-top: 10vh;
+    text-align: center;
+    @include text(toEM(100), $white, bold);
+    @include for-mobile {
+      font-size: toEM(60);
+    }
+  }
+  &__text {
+    text-align: center;
+    margin-top: 2vh;
+    @include text(toEM(30), $white, normal);
+  }
+  &__form {
+    margin-top: 3em;
+  }
+}

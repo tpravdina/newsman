@@ -1,0 +1,94 @@
+@import '../../scssHelpers';
+.ContactUs {
+  @include addaptive-padding;
+  display: grid;
+  grid-template:
+    'title title title title title'
+    '. left-text geometry right-text .'
+    '. . center-text . .'
+    '. . form . .'
+    / 1fr 3fr 4fr 3fr 1fr;
+  grid-gap: $column-gap;
+  @include for-tablet {
+    grid-template:
+      'title title title'
+      'left-text geometry right-text'
+      '. center-text .'
+      '. form .'
+      /3fr 4fr 3fr;
+  }
+  @include for-mobile {
+    grid-template:
+      'title title title'
+      'left-text big-vertical-line right-text'
+      'center-text center-text center-text'
+      'form form form'
+      /1fr auto 1fr;
+    grid-row-gap: 4 * $column-gap;
+  }
+  &__title {
+    grid-area: title;
+  }
+  &__left-text,
+  &__right-text,
+  &__center-text {
+    font-size: toEM(24);
+    line-height: 130.2%;
+  }
+  &__left-text {
+    grid-area: left-text;
+  }
+  &__right-text {
+    grid-area: right-text;
+    @include for-mobile {
+      justify-self: end;
+      text-align: right;
+    }
+  }
+  &__contact-item a {
+    text-decoration: none;
+    &:hover {
+      transition: 0.5s;
+      color: $orange;
+    }
+  }
+  &__center-text {
+    grid-area: center-text;
+    text-align: center;
+  }
+  &__contact-form {
+    grid-area: form;
+  }
+  &__geometry-container {
+    grid-area: geometry;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-row-gap: toEM(25);
+    justify-items: center;
+    @include for-mobile {
+      display: none;
+    }
+  }
+  &__circule {
+    width: toEM(40);
+    height: toEM(40);
+    background-color: $white;
+    border-radius: 50%;
+  }
+  &__vertical-line {
+    height: toEM(60);
+    border: 1px solid $white;
+    grid-column: 2;
+  }
+  &__big-vertical-line {
+    width: 1px;
+    height: 100%;
+    border: 1 solid $placeholder-color;
+    display: none;
+    @include for-mobile {
+      display: block;
+      grid-area: big-vertical-line;
+      justify-self: center;
+    }
+  }
+}

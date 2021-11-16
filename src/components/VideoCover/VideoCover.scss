@@ -1,0 +1,20 @@
+.VideoCover {
+  &__modal-video {
+    width: 100%;
+  }
+  &__container {
+    display: grid;
+    place-items: center;
+  }
+  &__cover-img,
+  &__play-button {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  &__play-button {
+    width: 20%;
+  }
+  &__cover-img {
+    width: 100%;
+  }
+}

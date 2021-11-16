@@ -1,0 +1,26 @@
+@import "../../scssHelpers/index.scss";
+.TopSales {
+  @include addaptive-padding();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: toEM(50);
+  &__title {
+    margin-bottom: 1em !important;
+  }
+  &__text {
+    font-size: toEM(20);
+    text-align: center;
+  }
+  &__menu {
+    width: 60%;
+    @include for-mobile {
+      width: 100%;
+    }
+    margin-top: toEM(70);
+  }
+  &__products {
+    width: 100%;
+    margin-top: toEM(30);
+  }
+}

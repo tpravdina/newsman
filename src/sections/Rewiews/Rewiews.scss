@@ -1,0 +1,94 @@
+@import "../../scssHelpers";
+.Rewiews {
+  @include addaptive-padding("right");
+  height: 100vh;
+
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+
+  display: flex;
+  align-items: center;
+  @include for-mobile {
+    height: auto;
+    flex-direction: column;
+    .StepSlider__container {
+      width: 130vw;
+      margin-left: -30vw;
+    }
+  }
+
+  &__slider-container {
+    position: relative;
+    @include for-mobile {
+      margin-top: 5vh;
+    }
+  }
+  &__next-button {
+    position: absolute;
+    bottom: 5vh;
+    right: -1 * $column-gap;
+  }
+  &__numbers {
+    position: absolute;
+    top: 0;
+    left: $slider-width + $slider-gap;
+    @include for-mobile {
+      left: 2 * $slider-gap;
+    }
+    z-index: 10;
+
+    font-family: "Caslim";
+    font-size: toEM(30);
+    letter-spacing: 0.1em;
+  }
+  &__title {
+    position: absolute;
+    top: 0;
+    left: 2 * ($slider-width + $slider-gap);
+    @include for-mobile {
+      left: 2 * $slider-width + $slider-gap;
+    }
+
+    font-family: "Caslim";
+    font-size: toEM(40);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    z-index: 10;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+  &__black-filter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+    width: 3 * $slider-width + 2 * $slider-gap;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(27, 27, 27, 1),
+      rgba(27, 27, 27, 0)
+    );
+  }
+  &__review {
+    @include for-mobile {
+      @include addaptive-padding;
+      margin-top: 3em;
+    }
+    margin-left: $column-gap;
+    &__name {
+      font-size: toEM(30);
+    }
+    &__role {
+      font-size: toEM(18);
+      color: $placeholder-color;
+    }
+    &__text {
+      margin-top: 1.5em;
+      font-size: toEM(24);
+      font-weight: 300;
+    }
+  }
+}

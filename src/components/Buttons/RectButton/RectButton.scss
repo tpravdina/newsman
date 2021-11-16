@@ -1,0 +1,43 @@
+@import "../../../scssHelpers";
+
+.RectButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: auto;
+  width: $rect-button-width;
+  max-width: 90%;
+
+  height: $rect-button-height;
+  border: 1px solid $orange;
+
+  padding: 0 $little-hor-space;
+  margin: 15vmin 0 10vmin 0;
+
+  @include accent-text(toEM(24), $orange);
+
+  &--short {
+    width: 0.5 * $rect-button-width;
+  }
+  &--filled {
+    width: auto;
+    background-color: $orange;
+    color: $black;
+  }
+  &__arrow {
+    height: 0.5 * $rect-button-height;
+    margin-left: $little-hor-space;
+    fill: $orange;
+  }
+
+  &:hover {
+    transition: 0.5s;
+    background-color: $orange;
+    color: $white;
+    .RectButton__arrow {
+      transition: 0.5s;
+      fill: $white;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../scssHelpers/index.scss";
+.Title {
+  margin: 12vmin 0 6vmin 0;
+  display: grid;
+  &--center-no-line {
+    place-items: center;
+  }
+  &--left-line {
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 2vw;
+  }
+  &--center-line {
+    grid-template-columns: 1fr auto 1fr;
+    grid-column-gap: 2vw;
+  }
+  &__title {
+    font-family: "Caslim";
+    font-size: toEM(40);
+    color: $white;
+    text-transform: uppercase;
+    @include accent-upper-text(toEM(40), $white);
+    letter-spacing: 0.1em;
+  }
+  &__line {
+    align-self: center;
+    border-top: 1px solid $white;
+    width: 100%;
+  }
+}

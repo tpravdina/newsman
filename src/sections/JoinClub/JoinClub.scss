@@ -1,0 +1,29 @@
+@import "../../scssHelpers";
+.JoinClub {
+  @include addaptive-padding;
+  @include background("../../backgroundImages/join-club-background.jpg");
+  min-height: 40vh;
+
+  display: grid;
+  place-items: center;
+
+  &__text {
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
+  &__first-line {
+    font-size: toEM(40);
+    color: $dark-orange;
+    text-transform: uppercase;
+  }
+  &__second-line {
+    margin-top: 1em;
+    font-size: toEM(30);
+    line-height: 1.5;
+    &--acсent {
+      color: $dark-orange;
+    }
+  }
+}

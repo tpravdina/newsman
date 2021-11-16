@@ -1,0 +1,17 @@
+@mixin text($size, $color, $weight) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}
+@mixin upper-text($size, $color, $weight) {
+  @include text($size, $color, $weight);
+  text-transform: uppercase;
+}
+@mixin accent-text($size, $color) {
+  @include text($size, $color, normal);
+  font-family: "Caslim";
+}
+@mixin accent-upper-text($size, $color) {
+  @include upper-text($size, $color, normal);
+  font-family: "Caslim";
+}

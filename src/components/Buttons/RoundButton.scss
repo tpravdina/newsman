@@ -1,0 +1,42 @@
+@import "../../scssHelpers";
+.RoundButton {
+  &__svg {
+    &--inversed {
+      fill: $white;
+      &__inner--filled {
+        fill: $orange;
+      }
+      &:hover {
+        transition: 0.5s;
+        fill: $orange;
+        .RoundButton__svg--inversed__inner--filled {
+          transition: 0.1s;
+          fill: $white;
+        }
+      }
+    }
+    fill: #ffffff00;
+    stroke: $orange;
+    stroke-width: 2px;
+    &__inner--filled {
+      fill: $orange;
+      stroke: none;
+    }
+    &__inner--outlined {
+      stroke: $orange;
+      stroke-width: 2px;
+    }
+    &:hover {
+      transition: 0.5s;
+      fill: $orange;
+      .RoundButton__svg__inner--filled {
+        transition: 0.1s;
+        fill: $white;
+      }
+      .RoundButton__svg__inner--outlined {
+        transition: 0.1s;
+        stroke: $white;
+      }
+    }
+  }
+}

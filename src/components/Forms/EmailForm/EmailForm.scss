@@ -1,0 +1,38 @@
+@import "../../../scssHelpers";
+@import "../../../components/Buttons/RectButton/RectButton.scss";
+
+.EmailForm {
+  display: grid;
+  grid-template-columns: auto auto;
+  &__input {
+    padding: 1em;
+    height: 100%;
+    background-color: $white;
+    color: $black;
+
+    font-size: toEM(20);
+
+    border: none;
+    border-bottom: 2px solid $white;
+    outline: none;
+
+    &::placeholder {
+      color: $placeholder-color;
+      font-weight: 300;
+    }
+    &--error {
+      border-bottom: 2px solid red;
+    }
+  }
+  &__button {
+    margin: 0;
+    width: toEM(130);
+    cursor: pointer;
+  }
+  &__error-message {
+    grid-column: span 2;
+    margin-top: 1em;
+    color: $white;
+    height: 2em;
+  }
+}

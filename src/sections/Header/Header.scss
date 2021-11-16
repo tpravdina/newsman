@@ -1,0 +1,25 @@
+@import "../../scssHelpers";
+.Header {
+  display: grid;
+  place-items: center;
+  &__logo {
+    margin-top: toEM(40);
+    width: 25%;
+    @include for-tablet {
+      width: 37.5%;
+    }
+    @include for-mobile {
+      width: 45%;
+    }
+  }
+  &__navbar {
+    margin: toEM(20) 0;
+    width: 50%;
+    @include for-tablet {
+      width: 75%;
+    }
+    @include for-mobile {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../scssHelpers";
+.CategoryMenu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: toEM(30);
+  &__button {
+    font-size: toEM(24);
+    font-weight: bold;
+    &:hover {
+      transition: 0.5s;
+      color: $orange;
+    }
+  }
+  &__button-underline {
+    border: 2px solid $orange;
+    width: 50%;
+  }
+}

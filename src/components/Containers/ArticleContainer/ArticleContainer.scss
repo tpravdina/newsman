@@ -1,0 +1,10 @@
+@import "../../../scssHelpers";
+.ArticleContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: $column-gap;
+  grid-row-gap: 2 * $column-gap;
+  @include for-mobile {
+    grid-row-gap: 6 * $column-gap;
+  }
+}

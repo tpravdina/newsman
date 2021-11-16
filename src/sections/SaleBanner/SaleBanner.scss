@@ -1,0 +1,32 @@
+@import "../../scssHelpers";
+.SaleBanner {
+  @include addaptive-padding;
+  height: 50vmin;
+  @include background("../../backgroundImages/sale-bunner.jpg");
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include for-tablet {
+    justify-content: space-around;
+  }
+  @include for-mobile {
+    justify-content: center;
+  }
+  &__text {
+    @include upper-text(toEM(100), $white, bold);
+    @include for-tablet {
+      &:first-child {
+        display: none;
+      }
+    }
+    @include for-mobile {
+      &:first-child {
+        display: none;
+      }
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}

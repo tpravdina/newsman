@@ -1,0 +1,12 @@
+@import "../../../scssHelpers";
+.ProductContainer {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  @include for-mobile {
+    grid-template-columns: 1fr;
+  }
+  grid-column-gap: $column-gap;
+  grid-row-gap: 5vmin;
+}

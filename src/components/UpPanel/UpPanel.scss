@@ -1,0 +1,76 @@
+@import '../../scssHelpers';
+.UpPanel {
+  @include addaptive-padding;
+  @include for-tablet-and-mobile {
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+  }
+  width: 100%;
+  min-height: toEM(70);
+  background-color: $broun;
+  font-weight: 300;
+  font-size: toEM(18);
+  a {
+    text-decoration: none;
+    &:hover {
+      transition: 0.5s;
+      color: $orange;
+    }
+  }
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: $column-gap;
+  grid-row-gap: 2vmin;
+  @include for-mobile {
+    grid-row-gap: 5vmin;
+  }
+  align-items: center;
+
+  &__facebook {
+    @include for-mobile {
+      grid-column: 6;
+    }
+  }
+  &__search-group {
+    grid-column: 5/8;
+    @include for-mobile {
+      grid-row: 2;
+      grid-column: 1/13;
+    }
+    display: flex;
+    align-items: center;
+  }
+  &__input {
+    margin-left: 1vw;
+    width: 100%;
+
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $white;
+  }
+  &__lang-group {
+    display: flex;
+    align-items: center;
+    grid-column: span 2/13;
+    justify-self: end;
+  }
+  &__lang {
+    cursor: pointer;
+    font-weight: 300;
+    &:hover {
+      transition: 0.5s;
+      color: $orange;
+    }
+  }
+  &__number {
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid $white;
+    border-radius: 50%;
+
+    display: grid;
+    place-items: center;
+    margin-left: 1vw;
+  }
+}

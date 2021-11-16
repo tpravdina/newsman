@@ -1,0 +1,9 @@
+@import "../../scssHelpers";
+.Articles {
+  display: flex;
+  flex-direction: column;
+  @include addaptive-padding;
+  &__button {
+    align-self: center;
+  }
+}

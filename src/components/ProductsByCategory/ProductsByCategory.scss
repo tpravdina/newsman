@@ -1,0 +1,38 @@
+@import "../../scssHelpers";
+.ProductsByCategory {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: $column-gap;
+  &__button-container {
+    grid-column: 3/11;
+    @include for-mobile {
+      grid-column: 1/13;
+    }
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: toEM(30);
+  }
+  &__button {
+    font-size: toEM(24);
+    font-weight: bold;
+    &:hover {
+      transition: 0.5s;
+      color: $orange;
+    }
+  }
+  &__button-underline {
+    border: 2px solid $orange;
+    width: 50%;
+  }
+  &__card-container {
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    @include for-mobile {
+      grid-template-columns: 1fr;
+    }
+    grid-column-gap: $column-gap;
+    grid-row-gap: 5vmin;
+  }
+}
